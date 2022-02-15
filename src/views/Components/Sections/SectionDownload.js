@@ -31,7 +31,7 @@ export default function SectionDownload() {
             <Button
               color="facebook"
               size="md"
-              href="https://drive.google.com/file/d/1ZUMj7PjACYrNUc1GAuKoepwswSG2fDM6/view?usp=sharing"
+              href="https://drive.google.com/file/d/1DsO1vZl0vKJQEcnpBU30wyISgjDQZQAI/view?usp=sharing"
               target="_blank"
             >
               Download My CV
@@ -39,7 +39,7 @@ export default function SectionDownload() {
             <Button
               color="facebook"
               size="md"
-              href="mailto:dgirsandi@gmail.com"
+              href="mailto:mfathulilhamm@gmail.com"
               target="_blank"
             >
               Contact Me via Email

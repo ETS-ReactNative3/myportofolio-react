@@ -51,7 +51,7 @@ export default function HeaderLinks(props) {
       </ListItem> */}
       <ListItem className={classes.listItem}>
         <Button
-          href="https://drive.google.com/file/d/1ZUMj7PjACYrNUc1GAuKoepwswSG2fDM6/view?usp=sharing"
+          href="https://drive.google.com/file/d/1DsO1vZl0vKJQEcnpBU30wyISgjDQZQAI/view?usp=sharing"
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -66,7 +66,7 @@ export default function HeaderLinks(props) {
           </IconButton>
         </Tooltip>*/}
           <Button
-            href="https://www.linkedin.com/in/andiirsandi/"
+            href="https://www.linkedin.com/in/m-fathul-ilham-93882a152/"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -77,7 +77,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
           <Button
             color="transparent"
-            href="https://github.com/sandirr"
+            href="https://github.com/mfathulilham"
             target="_blank"
             className={classes.navLink}
           >
@@ -93,7 +93,7 @@ export default function HeaderLinks(props) {
         > */}
           <Button
             color="transparent"
-            href="https://www.instagram.com/andi_irsandi_r/"
+            href="https://www.instagram.com/fathulilham_/"
             target="_blank"
             className={classes.navLink}
           >

@@ -20,12 +20,7 @@ export default function SectionCompletedExamples() {
           <GridItem xs={12} sm={12} md={8}>
             <h2>Portfolio</h2>
             <h4>
-              I have more than a year of experience as a professional programmer
-              (frontend developer) working on Digital & Next Business
-              Department, <strong>Telkom Indonesia</strong>. I also have one
-              year experience at a startup engaged in the health sector, namely
-              PT. Cepat Sembuh Hidup Sehat or <strong>sembuh.id</strong> as a
-              lead frontend web developer.
+            I'm a fresh graduated who has interest and great passion in <strong>Web Development</strong>. Able to communicate well, able to work in team and individual, and like challenges.
             </h4>
           </GridItem>
         </GridContainer>

@@ -10,82 +10,67 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 // import Button from "components/CustomButtons/Button.js";
 
-import sembuh from "assets/img/sembuh.png";
-import dashboardsembuh from "assets/img/dashboardsembuh.png";
-import mitra from "assets/img/mitra.png";
-import backoffice from "assets/img/backoffice.png";
-import taruhe from "assets/img/taruhe.png";
-import pengaju from "assets/img/pengaju.png";
-import ppkestraki from "assets/img/ppkestraki.png";
-import admin from "assets/img/admin.png";
-import sanchat from "assets/img/sanchat.png";
-import irsandicafe from "assets/img/irsandicafe.png";
-import tidakcovid from "assets/img/tidakcovid.png";
-import tiketku from "assets/img/tiketku.png";
+import benihku1 from "assets/img/benihku-1.png";
+import benihku2 from "assets/img/benihku-2.png";
+import benihku3 from "assets/img/benihku-3.png";
+import benihku4 from "assets/img/benihku-4.png";
+import benihku5 from "assets/img/benihku-5.png";
+import kanwil1 from "assets/img/kanwil-1.png";
+import kanwil2 from "assets/img/kanwil-2.png";
+import tajwid1 from "assets/img/tajwid-1.png";
+import tajwid2 from "assets/img/tajwid-2.png";
+import tajwid3 from "assets/img/tajwid-3.png";
+import tajwid4 from "assets/img/tajwid-4.png";
 // import profile from "assets/img/profile.jpg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/exampleStyle.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Carousel } from "react-bootstrap";
 
 const useStyles = makeStyles(styles);
 
 const dataPortfolio = [
-  { name: "Landing Page Sembuh", img: sembuh, link: "https://sembuh.id" },
-  {
-    name: "Sembuh Dashboard",
-    img: dashboardsembuh,
-    link: "https://dashboard.sembuh.id",
+  { 
+    name: "Real Estate Management",
+    desc: "Slicing the UI from UI/UX and build it using React.js and Tailwind",
+     img: [
+        {name: benihku1}, 
+        {name: benihku2},
+        {name: benihku3},
+        {name: benihku4},
+        {name: benihku5}
+    ] 
   },
-  {
-    name: "Gealileo Mitra Powered by Telkom Indonesia",
-    img: mitra,
-    link: "http://dtplogistik-frontend-mitra-dev.vsan-apps.playcourt.id/",
+  { 
+    name: "E-commerce Benih",
+    desc: "Build using Framework Laravel with MySQL for the databases",
+     img: [
+        {name: benihku1}, 
+        {name: benihku2},
+        {name: benihku3},
+        {name: benihku4},
+        {name: benihku5}
+    ] 
   },
-  {
-    name: "Taruhe Powered by Ministry of Education and Culture",
-    img: taruhe,
-    link: "https://play.google.com/store/apps/details?id=com.taruhe",
+  { 
+    name: "Sistem Informasi Perencanaan Dan Data Kementerian Agama Provinsi Sulawesi Selatan",
+    desc: "My first team project with others 4 web developer, my job description here is to get data from all units in Kanwil Kemenag Sulsel as requirements before developing the website",
+     img: [
+        {name: kanwil1, link:'https://sulsel.kemenag.go.id/perencanaan/'}, 
+        {name: kanwil2},
+    ], 
+    link:'https://sulsel.kemenag.go.id/perencanaan'
   },
-  {
-    name: "BackOffice Powered by Telkom Indonesia",
-    img: backoffice,
-    link: "http://dtp-budget-frontend-user-management-dev.vsan-apps.playcourt.id/",
-  },
-  {
-    name: "Gealileo Pengaju Powered by Telkom Indonesia",
-    img: pengaju,
-    link: "http://budget.gealileo-telkom.id/",
-  },
-  {
-    name: "Sanchat",
-    img: sanchat,
-    link: "https://bit.ly/Sanchat",
-  },
-  {
-    name: "Perkumpulan Profesi Kesehatan Tradisional Komplementer Indonesia",
-    img: ppkestraki,
-    link: "https://ppkestraki.id",
-  },
-  {
-    name: "Gealileo Admin Powered by Telkom Indonesia",
-    img: admin,
-    link: "http://budget-admin.gealileo-telkom.id/",
-  },
-  {
-    name: "IrsandiCafe",
-    img: irsandicafe,
-    link: "https://bit.ly/irsandicafe",
-  },
-  {
-    name: "TidakCovid-19",
-    img: tidakcovid,
-    link: "http://tidakcovid-19.web.app/",
-  },
-  {
-    name: "Tiketku",
-    img: tiketku,
-    link: "https://bit.ly/Tiketku-andro",
+  { 
+    name: "Belajar Tajwid",
+    desc: "Made with android studio using java",
+     img: [
+        {name: tajwid1}, 
+        {name: tajwid2},
+        {name: tajwid3},
+        {name: tajwid4}
+    ]
   },
   // {name:'', img: ,link:''},
 ];
@@ -102,31 +87,33 @@ export default function SectionExamples() {
             <GridItem
               xs={12}
               sm={12}
-              md={6}
-              style={{ marginBottom: 20 }}
+              md={9}
+              style={{ marginBottom: 50 }}
               key={index}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
-              <a
-                href={item.link}
-                target="_blank"
-                className={classes.link}
-                rel="noreferrer"
-              >
+              <a href={item.link} target="_blank">
                 <h4 style={{ color: "#000" }}>{item.name}</h4>
-                <img
-                  src={item.img}
-                  alt="..."
-                  className={
-                    classes.imgRaised +
-                    " " +
-                    classes.imgRounded +
-                    " " +
-                    classes.imgFluid
-                  }
-                />
+                <p style={{ color: "#808080" }}>{item.desc}</p>
+                <Carousel interval={3000} controls={false} >
+                  {item.img.map(data=>(
+                    <Carousel.Item>            
+                      <img
+                        src={data.name}
+                        alt="..."
+                        className={
+                          classes.imgRaised +
+                          " " +
+                          classes.imgRounded +
+                          " " +
+                          classes.imgFluid
+                        }
+                      />
+                  </Carousel.Item>
+                ))}
+                </Carousel>
               </a>
-            </GridItem>
+             </GridItem>
           ))}
         </GridContainer>
       </div>

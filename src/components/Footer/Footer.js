@@ -33,11 +33,11 @@ export default function Footer(props) {
           &copy; {new Date().getFullYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://www.linkedin.com/in/andiirsandi/"
+            href="https://www.linkedin.com/in/m-fathul-ilham-93882a152/"
             className={aClasses}
             target="_blank"
           >
-            Andi Irsandi
+            M. Fathul Ilham
           </a>{" "}
         </div>
       </div>
